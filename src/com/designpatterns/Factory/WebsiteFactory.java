@@ -4,11 +4,14 @@ public class WebsiteFactory {
 
 	public static Website getWebsite(WebsiteType websiteType) {
 		switch (websiteType) {
-			case BLOG: return new Blog();
+			case BLOG:
+				return new Blog();
 
-			case SHOP: return new Shop();
+			case SHOP:
+				return new Shop();
 
-			default: return null;
+			default:
+				return null;
 		}
 	}
 }

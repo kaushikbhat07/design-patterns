@@ -1,9 +1,10 @@
 package com.designpatterns.Factory;
 
-import com.study.DesignPatterns.Factory.Pages.CartPage;
-import com.study.DesignPatterns.Factory.Pages.CheckoutPage;
-import com.study.DesignPatterns.Factory.Pages.ItemPage;
-import com.study.DesignPatterns.Factory.Pages.SearchPage;
+
+import com.designpatterns.Factory.Pages.CartPage;
+import com.designpatterns.Factory.Pages.CheckoutPage;
+import com.designpatterns.Factory.Pages.ItemPage;
+import com.designpatterns.Factory.Pages.SearchPage;
 
 public class Shop extends Website {
 

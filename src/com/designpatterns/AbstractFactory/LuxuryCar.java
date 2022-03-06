@@ -1,9 +1,7 @@
 package com.designpatterns.AbstractFactory;
 
-public class LuxuryCar extends Car
-{
-	public LuxuryCar(Location location)
-	{
+public class LuxuryCar extends Car {
+	public LuxuryCar(Location location) {
 		super(CarType.LUXURY, location);
 		construct();
 	}

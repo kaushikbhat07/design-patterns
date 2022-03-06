@@ -1,9 +1,7 @@
 package com.designpatterns.AbstractFactory;
 
-public class SmallCar extends Car
-{
-	public SmallCar(Location location)
-	{
+public class SmallCar extends Car {
+	public SmallCar(Location location) {
 		super(CarType.SMALL, location);
 		construct();
 	}

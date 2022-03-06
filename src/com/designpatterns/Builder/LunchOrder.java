@@ -6,6 +6,13 @@ public class LunchOrder {
 	private final String meat;
 	private final String dressing;
 
+	private LunchOrder(Builder builder) {
+		this.bread = builder.bread;
+		this.condiments = builder.condiments;
+		this.meat = builder.meat;
+		this.dressing = builder.dressing;
+	}
+
 	public String getBread() {
 		return bread;
 	}
@@ -20,13 +27,6 @@ public class LunchOrder {
 
 	public String getDressing() {
 		return dressing;
-	}
-
-	private LunchOrder(Builder builder) {
-		this.bread = builder.bread;
-		this.condiments = builder.condiments;
-		this.meat = builder.meat;
-		this.dressing = builder.dressing;
 	}
 
 	@Override

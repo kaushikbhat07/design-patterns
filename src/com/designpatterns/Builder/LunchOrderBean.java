@@ -10,6 +10,7 @@ public class LunchOrderBean {
 	public LunchOrderBean() {
 
 	}
+
 	public String getBread() {
 		return bread;
 	}

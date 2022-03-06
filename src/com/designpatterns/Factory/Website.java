@@ -1,16 +1,16 @@
 package com.designpatterns.Factory;
 
-import com.study.DesignPatterns.Factory.Pages.Page;
+import com.designpatterns.Factory.Pages.Page;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Website {
+	protected List<Page> pages = new ArrayList<>();
+
 	public Website() {
 		this.createWebsite();
 	}
-
-	protected List<Page> pages = new ArrayList<>();
 
 	public List<Page> getPages() {
 		return pages;

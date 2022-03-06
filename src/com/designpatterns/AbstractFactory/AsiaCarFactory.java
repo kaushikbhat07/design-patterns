@@ -1,11 +1,9 @@
 package com.designpatterns.AbstractFactory;
 
 public class AsiaCarFactory {
-	public static Car buildCar(CarType model)
-	{
+	public static Car buildCar(CarType model) {
 		Car car = null;
-		switch (model)
-		{
+		switch (model) {
 			case SMALL:
 				car = new SmallCar(Location.ASIA);
 				break;
