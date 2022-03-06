@@ -18,8 +18,8 @@ In computer programming, **lazy initialization** is the tactic of delaying the c
 On the first invocation, the above method will check if the instance is already created using the instance variable. If there is no instance i.e. the instance is null, it will create an instance and will return its reference. If the instance is already created, it will simply return the reference of the instance.
 
 
-![singleton.png](images/singleton.png)
-![singletonpitfalls.png](images/singletonpitfalls.png)
+![singleton.png](src/com/designpatterns/images/singleton.png)
+![singletonpitfalls.png](src/com/designpatterns/images/singletonpitfalls.png)
 
 ## **Builder**
 
@@ -57,9 +57,9 @@ Here, the builder pattern will help you to consume additional attributes while r
 Build desired User instance with all mandatory attributes and a combination of optional attributes, without losing the immutability. 
 User object created with builder pattern does not have any setter method, so its state can not be changed once it has been built. This provides the desired immutability.
 
-![builder.png](images/builder.png)
-![builderdesign.png](images/builderdesign.png)
-![builderpitfalls.png](images/builderpitfalls.png)
+![builder.png](src/com/designpatterns/images/builder.png)
+![builderdesign.png](src/com/designpatterns/images/builderdesign.png)
+![builderpitfalls.png](src/com/designpatterns/images/builderpitfalls.png)
 
 ## **Prototype**
 A prototype is a template of any object before the actual object is constructed. In java also, it holds the same meaning. Prototype design pattern is used in scenarios where application needs to create a number of instances of a class, which has almost same state or differs very little.
@@ -79,9 +79,9 @@ https://howtodoinjava.com/design-patterns/creational/prototype-design-pattern-in
 
 Let's understand this pattern using an example. I am creating an entertainment application that will require instances of Movie, Album and Show classes very frequently. I do not want to create their instances everytime as it is costly. So, I will create their prototype instances, and everytime when i will need a new instance, I will just clone the prototype.
 
-![prototype.png](images/prototype.png)
-![prototypedesign.png](images/prototypedesign.png)
-![prototypepitfalls.png](images/prototypepitfalls.png)
+![prototype.png](src/com/designpatterns/images/prototype.png)
+![prototypedesign.png](src/com/designpatterns/images/prototypedesign.png)
+![prototypepitfalls.png](src/com/designpatterns/images/prototypepitfalls.png)
 
 ## **Factory Method**
 
@@ -92,9 +92,9 @@ The creation of an object precludes its reuse without significant duplication of
 The creation of an object requires access to information or resources that should not be contained within the composing class.
 The lifetime management of the generated objects must be centralized to ensure a consistent behavior within the application.
 
-![factoryclass.png](images/factoryclass.png)
-![factory.png](images/factory.png)
-![factorypitfalls.png](images/factorypitfalls.png)
+![factoryclass.png](src/com/designpatterns/images/factoryclass.png)
+![factory.png](src/com/designpatterns/images/factory.png)
+![factorypitfalls.png](src/com/designpatterns/images/factorypitfalls.png)
 
 ## **Abstract Factory Pattern**
 
@@ -108,6 +108,6 @@ Firstly, we need car factories in each location specified in the problem stateme
 
 So basically, we need another layer of abstraction which will identify the location and internally use correct car factory implementation without even giving a single hint to the user. This is exactly the problem, which abstract factory pattern is used to solve.
 
-![absfactoryclassdiagram.png](images/absfactoryclassdiagram.png)
-![absfactory.png](images/absfactory.png)
-![absfactorypitfalls.png](images/absfactorypitfalls.png)
+![absfactoryclassdiagram.png](src/com/designpatterns/images/absfactoryclassdiagram.png)
+![absfactory.png](src/com/designpatterns/images/absfactory.png)
+![absfactorypitfalls.png](src/com/designpatterns/images/absfactorypitfalls.png)
